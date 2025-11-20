@@ -1,10 +1,10 @@
 import { useState, useMemo } from 'react';
-import { useAssets } from '@/hooks/useAssets';
-import { AssetFilterService, AllAssetsFilter, OwnedAssetsFilter } from '@/utils/assetFilter';
 import AssetList from '@/components/assets/AssetList';
 import AssetFilter from '@/components/assets/AssetFilter';
 import Button from '@/components/button';
 import './index.module.css';
+import { useQuery } from '@tanstack/react-query';
+import { fetchAssets } from '@/lib/api-nest';
 
 
 /**
@@ -12,7 +12,6 @@ import './index.module.css';
  * Dependency Inversion: Depends on abstractions (hooks, services) not concrete implementations
  */
 export default function AssetsDashboard() {
-  const { assets, loading, error } = useAssets();
   const [connectedAddress, setConnectedAddress] = useState<string | null>(null);
   const [showOwnedOnly, setShowOwnedOnly] = useState(false);
 
@@ -24,17 +23,20 @@ export default function AssetsDashboard() {
     setConnectedAddress(mockAddress);
   };
 
-  // Dependency Inversion: Uses filter service abstraction
-  const filterService = useMemo(() => {
-    const service = new AssetFilterService(
-      showOwnedOnly ? new OwnedAssetsFilter() : new AllAssetsFilter()
-    );
-    return service;
-  }, [showOwnedOnly]);
+  // Build query params based on filter state
+  const queryParams = useMemo(() => {
+    if (showOwnedOnly && connectedAddress) {
+      return { owner: connectedAddress };
+    }
+    return undefined;
+  }, [showOwnedOnly, connectedAddress]);
 
-  const filteredAssets = useMemo(() => {
-    return filterService.filter(assets, connectedAddress || undefined);
-  }, [filterService, assets, connectedAddress]);
+  const { data: assets, isLoading, isError } = useQuery({
+    queryKey: ['assets', queryParams],
+    queryFn: () => fetchAssets(queryParams),
+  });
+
+  const assetsList = assets?.data ?? [];
 
   return (
     <>
@@ -57,15 +59,15 @@ export default function AssetsDashboard() {
             <AssetFilter showOwnedOnly={showOwnedOnly} onToggle={setShowOwnedOnly} />
           )}
 
-          {error ? (
+          {isError ? (
             <div className="py-12 text-center">
               <p className="text-red">Error loading assets. Please try again later.</p>
             </div>
           ) : (
             <AssetList
-              assets={filteredAssets}
+              assets={assetsList}
               connectedAddress={connectedAddress || undefined}
-              loading={loading}
+              loading={isLoading}
             />
           )}
         </div>
