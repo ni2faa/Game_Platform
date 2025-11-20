@@ -18,6 +18,7 @@ import {
 import request, { Response } from '@/lib/request-nest';
 import { Address } from 'wagmi';
 import { GenesisRole } from '@/constants';
+import { GameAsset } from './types';
 
 export const fetchLogin = (data: LoginParams) => request.post<any, Response<UserInfo>>('/auth/login', data);
 
@@ -57,3 +58,6 @@ export const fetchGenesisUpgrade = (data: { address: string; role: GenesisRole }
   request.post<any, Response<number[]>>('/assets/nft/upgrade', data);
 
 export const fetchInvitationCode = () => request.get<any, Response<InvitationCodeResult>>('/invitation/code');
+
+export const fetchAssets = (params?: { owner?: string }) => 
+  request.get<any, Response<GameAsset[]>>('/api/v1/assets', { params });

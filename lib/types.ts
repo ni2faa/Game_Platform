@@ -517,3 +517,10 @@ export type WorldCapInfo = {
   deadline: number;
   ownedNft?: any[];
 };
+
+export type GameAsset = {
+  id: number;
+  name: string;
+  image: string;
+  owner: string;
+};

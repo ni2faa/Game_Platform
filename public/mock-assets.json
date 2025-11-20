@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Obsidian Blade",
+    "image": "https://placehold.co/400?text=Obsidian+Blade",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 2,
+    "name": "Ethereal Shield",
+    "image": "https://placehold.co/400?text=Ethereal+Shield",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 3,
+    "name": "Health Potion XL",
+    "image": "https://placehold.co/400?text=Health+Potion",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 4,
+    "name": "Crypto Knight",
+    "image": "https://placehold.co/400?text=Crypto+Knight",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 5,
+    "name": "Golden Helmet",
+    "image": "https://placehold.co/400?text=Golden+Helmet",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 6,
+    "name": "Shadow Boots",
+    "image": "https://placehold.co/400?text=Shadow+Boots",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 7,
+    "name": "Mana Crystal",
+    "image": "https://placehold.co/400?text=Mana+Crystal",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 8,
+    "name": "Dragon Scale Armor",
+    "image": "https://placehold.co/400?text=Dragon+Armor",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 9,
+    "name": "Phoenix Feather",
+    "image": "https://placehold.co/400?text=Phoenix+Feather",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 10,
+    "name": "Ancient Scroll",
+    "image": "https://placehold.co/400?text=Ancient+Scroll",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 11,
+    "name": "Thunder Hammer",
+    "image": "https://placehold.co/400?text=Thunder+Hammer",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 12,
+    "name": "Rogue Dagger",
+    "image": "https://placehold.co/400?text=Rogue+Dagger",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 13,
+    "name": "Elven Bow",
+    "image": "https://placehold.co/400?text=Elven+Bow",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 14,
+    "name": "Iron Gauntlets",
+    "image": "https://placehold.co/400?text=Iron+Gauntlets",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 15,
+    "name": "Mystic Ring",
+    "image": "https://placehold.co/400?text=Mystic+Ring",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 16,
+    "name": "Orcish Axe",
+    "image": "https://placehold.co/400?text=Orcish+Axe",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 17,
+    "name": "Silver Amulet",
+    "image": "https://placehold.co/400?text=Silver+Amulet",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 18,
+    "name": "Mage Robes",
+    "image": "https://placehold.co/400?text=Mage+Robes",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 19,
+    "name": "Berserker Belt",
+    "image": "https://placehold.co/400?text=Berserker+Belt",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 20,
+    "name": "Spirit Orb",
+    "image": "https://placehold.co/400?text=Spirit+Orb",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 21,
+    "name": "Vampire Cloak",
+    "image": "https://placehold.co/400?text=Vampire+Cloak",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 22,
+    "name": "Goblin Spear",
+    "image": "https://placehold.co/400?text=Goblin+Spear",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 23,
+    "name": "Frost Wand",
+    "image": "https://placehold.co/400?text=Frost+Wand",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 24,
+    "name": "Titan Greaves",
+    "image": "https://placehold.co/400?text=Titan+Greaves",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 25,
+    "name": "Emerald Gem",
+    "image": "https://placehold.co/400?text=Emerald+Gem",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 26,
+    "name": "Paladin Helm",
+    "image": "https://placehold.co/400?text=Paladin+Helm",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 27,
+    "name": "Necromancer Staff",
+    "image": "https://placehold.co/400?text=Necro+Staff",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 28,
+    "name": "Lucky Coin",
+    "image": "https://placehold.co/400?text=Lucky+Coin",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  },
+  {
+    "id": 29,
+    "name": "Rusty Key",
+    "image": "https://placehold.co/400?text=Rusty+Key",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678"
+  },
+  {
+    "id": 30,
+    "name": "Map of Worlds",
+    "image": "https://placehold.co/400?text=World+Map",
+    "owner": "0x1234567890abcdef1234567890abcdef12345678_mock"
+  }
+]

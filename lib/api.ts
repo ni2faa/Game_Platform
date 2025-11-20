@@ -39,6 +39,7 @@ import {
   RewardRankItem,
   GamerEmailInfo,
   WorldCapInfo,
+  GameAsset,
 } from './types';
 
 /**

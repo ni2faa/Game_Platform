@@ -71,6 +71,8 @@ function LayoutHeader() {
     },
   });
 
+  const isAssetsPage = router.pathname === '/assets'; // checking is this page is assets page
+
   return (
     <header className="relative z-20 flex justify-between px-8 py-2.5 md:px-2 2xl:px-0">
       <div className="flex items-center justify-start">
@@ -84,7 +86,7 @@ function LayoutHeader() {
             <img src="/img/pl/power_level.png" alt="PL" className="inline-block h-10 w-10" />
           </div>
         ) : null}
-        <Web3Status />
+        {!isAssetsPage && <Web3Status />} {/* if this page is assets page, don't show web3 status */}
       </div>
     </header>
   );
