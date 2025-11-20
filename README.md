@@ -23,7 +23,7 @@ A Next.js application for browsing and filtering game assets with wallet-based o
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ni2faa/Game_Platform.git
    cd game-asset-dashboard
    ```
 
